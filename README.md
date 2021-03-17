@@ -1,14 +1,3 @@
-# Welcome to your CDK TypeScript project!
+# Sample - Kinesis to S3 & DynamoDB
 
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+This project uses the CDK to setup a Kinesis Data Stream. It then connects a Delivery Stream to move data into S3 and configures a Lambda function that counts the records that are comming in from Kinesis and stores the results in DynamoDB.
